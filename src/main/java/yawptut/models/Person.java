@@ -14,6 +14,16 @@ public class Person {
 	@Index
 	private String name;
 
+	private IdRef<Job> jobId;
+
+	public IdRef<Job> getJobId() {
+	    return jobId;
+	}
+
+	public void setJobId(IdRef<Job> jobId) {
+	    this.jobId = jobId;
+	}
+
 	public IdRef<Person> getId() {
 		return id;
 	}
